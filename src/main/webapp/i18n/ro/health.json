@@ -1,0 +1,35 @@
+{
+    "health": {
+        "title": "Starea aplicației",
+        "refresh.button": "Reîncărcare",
+        "stacktrace": "Stacktrace",
+        "details": {
+            "details": "Detalii",
+            "properties": "Proprietăți",
+            "name": "Nume",
+            "value": "Valoare",
+            "error": "Eroare"
+        },
+        "indicator": {
+            "binders": "Message broker",
+            "discoveryComposite": "Discovery Composite",
+            "refreshScope": "Microservice Refresh Scope",
+            "configServer": "Microservice Config Server",
+            "hystrix": "Hystrix",
+            "consul": "Consul",
+            "diskSpace": "Spațiu disc",
+            "mail": "Email",
+            "elasticsearch": "Elasticsearch",
+            "db": "Bază de date"
+        },
+        "table": {
+            "service": "Nume serviciu",
+            "status": "Stare"
+        },
+        "status": {
+            "UNKNOWN": "UNKNOWN",
+            "UP": "Sus",
+            "DOWN": "Jos"
+        }
+    }
+}
