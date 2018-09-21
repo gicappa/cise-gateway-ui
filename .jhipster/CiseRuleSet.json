@@ -1,0 +1,50 @@
+{
+    "name": "CiseRuleSet",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 4096
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ciseRule",
+            "otherEntityName": "ciseRule",
+            "otherEntityRelationshipName": "ciseRuleSet"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "ciseService",
+            "otherEntityName": "ciseService",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "ciseRuleSet"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "ciseAuthority",
+            "otherEntityName": "ciseAuthority",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180921132630",
+    "entityTableName": "cise_rule_set",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

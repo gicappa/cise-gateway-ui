@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseAuthority" : {
+            "home": {
+                "title": "Cise Authorities",
+                "createLabel": "Creeare o nouă entitate Cise Authority",
+                "createOrEditLabel": "Creeare sau editare Cise Authority",
+                "search": "Căutare după Cise Authority"
+            },
+            "created": "A fost creată o nouă entitate Cise Authority cu identificatorul {{ param }}",
+            "updated": "Cise Authority cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Cise Authority cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Cise Authority {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Authority"
+            },
+            "name": "Name",
+            "description": "Description",
+            "ciseService": "Cise Service",
+            "ciseRuleSet": "Cise Rule Set",
+            "user": "User"
+        }
+    }
+}

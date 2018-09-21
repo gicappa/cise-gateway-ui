@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseService" : {
+            "home": {
+                "title": "CiseServices",
+                "createLabel": "Genera un nuovo Cise Service",
+                "createOrEditLabel": "Genera o modifica un Cise Service",
+                "search": "Cerca Cise Service"
+            },
+            "created": "&Egrave; stato generato un nuovo Cise Service con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Cise Service identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Cise Service con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Cise Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Service"
+            },
+            "name": "Name",
+            "serviceType": "Service Type",
+            "serviceOperation": "Service Operation",
+            "ciseRuleSet": "Cise Rule Set",
+            "ciseAuthority": "Cise Authority"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseRuleSet" : {
+            "home": {
+                "title": "Cise Rule Sets",
+                "createLabel": "Creeare o nouă entitate Cise Rule Set",
+                "createOrEditLabel": "Creeare sau editare Cise Rule Set",
+                "search": "Căutare după Cise Rule Set"
+            },
+            "created": "A fost creată o nouă entitate Cise Rule Set cu identificatorul {{ param }}",
+            "updated": "Cise Rule Set cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Cise Rule Set cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Cise Rule Set {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Rule Set"
+            },
+            "name": "Name",
+            "description": "Description",
+            "ciseRule": "Cise Rule",
+            "ciseService": "Cise Service",
+            "ciseAuthority": "Cise Authority"
+        }
+    }
+}

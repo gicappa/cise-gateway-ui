@@ -1,0 +1,12 @@
+{
+    "gatewayuiApp": {
+        "CiseServiceOperationType" : {
+            "null": "",
+            "PUSH": "PUSH",
+            "SUBSCRIBE": "SUBSCRIBE",
+            "ACKNOWLEDGEMENT": "ACKNOWLEDGEMENT",
+            "FEEDBACK": "FEEDBACK",
+            "PULL": "PULL"
+        }
+    }
+}

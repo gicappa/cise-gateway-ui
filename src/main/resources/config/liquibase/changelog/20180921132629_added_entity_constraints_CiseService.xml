@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity CiseService.
+    -->
+    <changeSet id="20180921132629-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="cise_rule_set_id"
+                                 baseTableName="cise_service"
+                                 constraintName="fk_cise_service_cise_rule_set_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cise_rule_set"/>
+
+        <addForeignKeyConstraint baseColumnNames="cise_authority_id"
+                                 baseTableName="cise_service"
+                                 constraintName="fk_cise_service_cise_authority_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cise_authority"/>
+
+    </changeSet>
+</databaseChangeLog>

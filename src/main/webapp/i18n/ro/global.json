@@ -10,6 +10,11 @@
                 "bankAccount": "ContBancar",
                 "label": "Etichetă",
                 "operation": "Operație",
+                "ciseAuthority": "Cise Authority",
+                "ciseService": "Cise Service",
+                "ciseRuleSet": "Cise Rule Set",
+                "ciseRule": "Cise Rule",
+                "ciseServiceProfile": "Cise Service Profile",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

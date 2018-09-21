@@ -1,0 +1,32 @@
+
+{
+    "gatewayuiApp": {
+        "ciseServiceProfile" : {
+            "home": {
+                "title": "Cise Service Profiles",
+                "createLabel": "Crear nuevo Cise Service Profile",
+                "createOrEditLabel": "Crear o editar Cise Service Profile",
+                "search": "Search for Cise Service Profile"
+            },
+            "created": "Un nuevo Cise Service Profile ha sido creado con el identificador {{ param }}",
+            "updated": "Un Cise Service Profile ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Cise Service Profile ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Cise Service Profile {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Service Profile"
+            },
+            "name": "Name",
+            "serviceId": "Service Id",
+            "community": "Community",
+            "country": "Country",
+            "dataFreshness": "Data Freshness",
+            "serviceFunction": "Service Function",
+            "seaBasin": "Sea Basin",
+            "serviceRole": "Service Role",
+            "serviceType": "Service Type",
+            "ciseRule": "Cise Rule"
+        }
+    }
+}

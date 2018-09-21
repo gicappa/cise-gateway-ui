@@ -1,0 +1,15 @@
+{
+    "gatewayuiApp": {
+        "CiseSeaBasinType" : {
+            "null": "",
+            "ATLANTIC": "ATLANTIC",
+            "ARCTIC_OCEAN": "ARCTIC_OCEAN",
+            "NON_SPECIFIED": "NON_SPECIFIED",
+            "BALTIC_SEA": "BALTIC_SEA",
+            "OUTERMOST_REGIONS": "OUTERMOST_REGIONS",
+            "NORTH_SEA": "NORTH_SEA",
+            "MEDITERRANEAN": "MEDITERRANEAN",
+            "BLACK_SEA": "BLACK_SEA"
+        }
+    }
+}

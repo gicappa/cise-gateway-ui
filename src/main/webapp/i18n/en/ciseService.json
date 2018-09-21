@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseService" : {
+            "home": {
+                "title": "Cise Services",
+                "createLabel": "Create a new Cise Service",
+                "createOrEditLabel": "Create or edit a Cise Service",
+                "search": "Search for Cise Service"
+            },
+            "created": "A new Cise Service is created with identifier {{ param }}",
+            "updated": "A Cise Service is updated with identifier {{ param }}",
+            "deleted": "A Cise Service is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Cise Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Service"
+            },
+            "name": "Name",
+            "serviceType": "Service Type",
+            "serviceOperation": "Service Operation",
+            "ciseRuleSet": "Cise Rule Set",
+            "ciseAuthority": "Cise Authority"
+        }
+    }
+}

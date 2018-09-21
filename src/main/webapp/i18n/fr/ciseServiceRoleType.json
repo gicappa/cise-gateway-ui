@@ -1,0 +1,9 @@
+{
+    "gatewayuiApp": {
+        "CiseServiceRoleType" : {
+            "null": "",
+            "CONSUMER": "CONSUMER",
+            "PROVIDER": "PROVIDER"
+        }
+    }
+}

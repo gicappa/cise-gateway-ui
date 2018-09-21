@@ -1,0 +1,169 @@
+// Entity Model for the acl rules application
+entity CiseAuthority {
+	name String required
+    description String 
+}
+
+entity CiseService {
+	name String required
+    serviceType CiseServiceType required
+    serviceOperation CiseServiceOperationType required
+}
+
+entity CiseRuleSet {
+	name String required
+    description String maxlength(4096)
+}
+
+entity CiseRule {
+	name String required
+    ruleType CiseRuleType required
+    entityTemplate String maxlength(4096)
+}
+
+entity CiseServiceProfile {
+	name String required
+    serviceId String
+    community CiseCommunityType
+    country String
+    dataFreshness CiseDataFreshnessType
+    serviceFunction CiseFunctionType
+    seaBasin CiseSeaBasinType
+    serviceRole CiseServiceRoleType
+    serviceType CiseServiceType
+}
+
+// Details of the implementation ///////////
+paginate CiseAuthority, CiseService, CiseRule with pagination
+service * with serviceImpl
+dto * with mapstruct
+
+// Relationships ///////////////////////////
+relationship ManyToOne {
+	CiseAuthority{user} to User
+}
+
+relationship OneToMany {
+	CiseAuthority to CiseService
+}
+
+relationship OneToOne {
+	CiseService to CiseRuleSet
+}
+
+relationship OneToMany {
+	CiseAuthority to CiseRuleSet
+}
+
+relationship OneToMany {
+	CiseRuleSet to CiseRule
+}
+     
+relationship OneToOne {
+	CiseRule to CiseServiceProfile
+}
+
+// Enumerations ///////////////////////////
+enum CiseRuleType {
+	ALLOW_ALL_FILEDS, 
+    ALLOW_SPECIFIC_FILEDS,
+    DENY_ALL_FIELDS
+}
+
+enum CiseServiceType {
+    VESSEL_DOCUMENT_SERVICE,
+    ORGANIZATION_DOCUMENT_SERVICE,
+    AIRCRAFT_SERVICE,
+    VESSEL_SERVICE,
+    DOCUMENT_SERVICE,
+    OPERATIONAL_ASSET_SERVICE,
+    MOVEMENT_SERVICE,
+    ACTION_SERVICE,
+    MARITIME_SAFETY_INCIDENT_SERVICE,
+    LAND_VEHICLE_SERVICE,
+    EVENT_DOCUMENT_SERVICE,
+    RISK_SERVICE,
+    LAW_INFRINGEMENT_INCIDENT_SERVICE,
+    PERSON_SERVICE,
+    LOCATION_SERVICE,
+    METEO_OCEANOGRAPHIC_OBSERVATION_SERVICE,
+    CERTIFICATE_DOCUMENT_SERVICE,
+    AGENT_SERVICE,
+    INCIDENT_SERVICE,
+    LOCATION_DOCUMENT_SERVICE,
+    ANOMALY_SERVICE,
+    IRREGULAR_MIGRATION_INCIDENT_SERVICE,
+    CARGO_SERVICE,
+    RISK_DOCUMENT_SERVICE,
+    PERSON_DOCUMENT_SERVICE,
+    CARGO_DOCUMENT_SERVICE,
+    CRISIS_INCIDENT_SERVICE,
+    ORGANIZATION_SERVICE
+}
+
+enum CiseCommunityType {    
+	FISHERIES_CONTROL,
+    GENERAL_LAW_ENFORCEMENT,
+    CUSTOMS,
+    MARITIME_SAFETY_SECURITY,
+    NON_SPECIFIED,
+    MARINE_ENVIRONMENT,
+    OTHER,
+    BORDER_CONTROL,
+    DEFENCE_MONITORING
+}
+
+enum CiseDataFreshnessType {
+    REAL_TIME,
+    NEARLY_REAL_TIME,
+    UNKNOWN,
+    HISTORIC
+}
+
+enum CiseSeaBasinType {
+    ATLANTIC,
+    ARCTIC_OCEAN,
+    NON_SPECIFIED,
+    BALTIC_SEA,
+    OUTERMOST_REGIONS,
+    NORTH_SEA,
+    MEDITERRANEAN,
+    BLACK_SEA
+}
+
+enum CiseServiceRoleType {
+	CONSUMER,
+    PROVIDER
+}
+
+enum CiseFunctionType {
+    LAW_ENFORCEMENT_MONITORING,
+    NON_SPECIFIED,
+    CUSTOMS_OPERATION,
+    BORDER_OPERATION,
+    BORDER_MONITORING,
+    ENVIRONMENT_MONITORING,
+    CUSTOMS_MONITORING,
+    ENVIRONMENT_WARNING,
+    CSDP_TASK,
+    COUNTER_TERRORISM,
+    LAW_ENFORCEMENT_OPERATION,
+    OPERATION,
+    FISHERIES_WARNING,
+    FISHERIES_OPERATION,
+    VTM,
+    SAFETY,
+    SECURITY,
+    FISHERIES_MONITORING,
+    DEFENCE_MONITORING,
+    SAR,
+    ENVIRONMENT_RESPONSE
+}
+
+enum CiseServiceOperationType {
+    PUSH,
+    SUBSCRIBE,
+    ACKNOWLEDGEMENT,
+    FEEDBACK,
+    PULL
+}

@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseService" : {
+            "home": {
+                "title": "Cise Services",
+                "createLabel": "Creeare o nouă entitate Cise Service",
+                "createOrEditLabel": "Creeare sau editare Cise Service",
+                "search": "Căutare după Cise Service"
+            },
+            "created": "A fost creată o nouă entitate Cise Service cu identificatorul {{ param }}",
+            "updated": "Cise Service cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Cise Service cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Cise Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Service"
+            },
+            "name": "Name",
+            "serviceType": "Service Type",
+            "serviceOperation": "Service Operation",
+            "ciseRuleSet": "Cise Rule Set",
+            "ciseAuthority": "Cise Authority"
+        }
+    }
+}

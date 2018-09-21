@@ -1,0 +1,16 @@
+{
+    "gatewayuiApp": {
+        "CiseCommunityType" : {
+            "null": "",
+            "FISHERIES_CONTROL": "FISHERIES_CONTROL",
+            "GENERAL_LAW_ENFORCEMENT": "GENERAL_LAW_ENFORCEMENT",
+            "CUSTOMS": "CUSTOMS",
+            "MARITIME_SAFETY_SECURITY": "MARITIME_SAFETY_SECURITY",
+            "NON_SPECIFIED": "NON_SPECIFIED",
+            "MARINE_ENVIRONMENT": "MARINE_ENVIRONMENT",
+            "OTHER": "OTHER",
+            "BORDER_CONTROL": "BORDER_CONTROL",
+            "DEFENCE_MONITORING": "DEFENCE_MONITORING"
+        }
+    }
+}

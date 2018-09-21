@@ -1,0 +1,27 @@
+
+{
+    "gatewayuiApp": {
+        "ciseRuleSet" : {
+            "home": {
+                "title": "Cise Rule Sets",
+                "createLabel": "Create a new Cise Rule Set",
+                "createOrEditLabel": "Create or edit a Cise Rule Set",
+                "search": "Search for Cise Rule Set"
+            },
+            "created": "A new Cise Rule Set is created with identifier {{ param }}",
+            "updated": "A Cise Rule Set is updated with identifier {{ param }}",
+            "deleted": "A Cise Rule Set is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Cise Rule Set {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Rule Set"
+            },
+            "name": "Name",
+            "description": "Description",
+            "ciseRule": "Cise Rule",
+            "ciseService": "Cise Service",
+            "ciseAuthority": "Cise Authority"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "gatewayuiApp": {
+        "CiseRuleType" : {
+            "null": "",
+            "ALLOW_ALL_FILEDS": "ALLOW_ALL_FILEDS",
+            "ALLOW_SPECIFIC_FILEDS": "ALLOW_SPECIFIC_FILEDS",
+            "DENY_ALL_FIELDS": "DENY_ALL_FIELDS"
+        }
+    }
+}

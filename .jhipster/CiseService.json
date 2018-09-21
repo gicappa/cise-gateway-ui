@@ -1,0 +1,53 @@
+{
+    "name": "CiseService",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "serviceType",
+            "fieldType": "CiseServiceType",
+            "fieldValues": "VESSEL_DOCUMENT_SERVICE,ORGANIZATION_DOCUMENT_SERVICE,AIRCRAFT_SERVICE,VESSEL_SERVICE,DOCUMENT_SERVICE,OPERATIONAL_ASSET_SERVICE,MOVEMENT_SERVICE,ACTION_SERVICE,MARITIME_SAFETY_INCIDENT_SERVICE,LAND_VEHICLE_SERVICE,EVENT_DOCUMENT_SERVICE,RISK_SERVICE,LAW_INFRINGEMENT_INCIDENT_SERVICE,PERSON_SERVICE,LOCATION_SERVICE,METEO_OCEANOGRAPHIC_OBSERVATION_SERVICE,CERTIFICATE_DOCUMENT_SERVICE,AGENT_SERVICE,INCIDENT_SERVICE,LOCATION_DOCUMENT_SERVICE,ANOMALY_SERVICE,IRREGULAR_MIGRATION_INCIDENT_SERVICE,CARGO_SERVICE,RISK_DOCUMENT_SERVICE,PERSON_DOCUMENT_SERVICE,CARGO_DOCUMENT_SERVICE,CRISIS_INCIDENT_SERVICE,ORGANIZATION_SERVICE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "serviceOperation",
+            "fieldType": "CiseServiceOperationType",
+            "fieldValues": "PUSH,SUBSCRIBE,ACKNOWLEDGEMENT,FEEDBACK,PULL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "ciseRuleSet",
+            "otherEntityName": "ciseRuleSet",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "ciseService"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "ciseAuthority",
+            "otherEntityName": "ciseAuthority",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180921132629",
+    "entityTableName": "cise_service",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

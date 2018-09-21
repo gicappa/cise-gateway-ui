@@ -1,0 +1,45 @@
+{
+    "name": "CiseAuthority",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ciseService",
+            "otherEntityName": "ciseService",
+            "otherEntityRelationshipName": "ciseAuthority"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ciseRuleSet",
+            "otherEntityName": "ciseRuleSet",
+            "otherEntityRelationshipName": "ciseAuthority"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180921132628",
+    "entityTableName": "cise_authority",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

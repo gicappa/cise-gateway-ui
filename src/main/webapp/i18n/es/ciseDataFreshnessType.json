@@ -1,0 +1,11 @@
+{
+    "gatewayuiApp": {
+        "CiseDataFreshnessType" : {
+            "null": "",
+            "REAL_TIME": "REAL_TIME",
+            "NEARLY_REAL_TIME": "NEARLY_REAL_TIME",
+            "UNKNOWN": "UNKNOWN",
+            "HISTORIC": "HISTORIC"
+        }
+    }
+}

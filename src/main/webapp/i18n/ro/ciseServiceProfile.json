@@ -1,0 +1,32 @@
+
+{
+    "gatewayuiApp": {
+        "ciseServiceProfile" : {
+            "home": {
+                "title": "Cise Service Profiles",
+                "createLabel": "Creeare o nouă entitate Cise Service Profile",
+                "createOrEditLabel": "Creeare sau editare Cise Service Profile",
+                "search": "Căutare după Cise Service Profile"
+            },
+            "created": "A fost creată o nouă entitate Cise Service Profile cu identificatorul {{ param }}",
+            "updated": "Cise Service Profile cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Cise Service Profile cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Cise Service Profile {{ id }}?"
+            },
+            "detail": {
+                "title": "Cise Service Profile"
+            },
+            "name": "Name",
+            "serviceId": "Service Id",
+            "community": "Community",
+            "country": "Country",
+            "dataFreshness": "Data Freshness",
+            "serviceFunction": "Service Function",
+            "seaBasin": "Sea Basin",
+            "serviceRole": "Service Role",
+            "serviceType": "Service Type",
+            "ciseRule": "Cise Rule"
+        }
+    }
+}
