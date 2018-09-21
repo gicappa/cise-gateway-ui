@@ -32,7 +32,20 @@
       "es"
     ],
     "clientFramework": "react",
-    "jhiPrefix": "jhi"
+    "jhiPrefix": "jhi",
+    "appsFolders": [
+      "cise-gateway-ui"
+    ],
+    "directoryPath": "../",
+    "jwtSecretKey": "Yjg1Y2VkN2MwMDJlMzVhN2Y5MGUwZjBjOTY2YzM2MWY3ZDNiYjIyZjllOGFjNjU0MjVhZWU3ZTU1MDA0NWI0ZGI3OThlMTdjNGE0ZmVhYWNlNmI3MjA1ZTdmYTI2MjBhNDZjZQ==",
+    "dockerRepositoryName": "cise-gateway-ui",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "Ingress",
+    "ingressDomain": "default.192.168.99.100.nip.io",
+    "monitoring": "elk",
+    "istio": "no",
+    "istioRoute": false
   },
   "git-provider": "GitHub",
   "git-company": "gicappa",
